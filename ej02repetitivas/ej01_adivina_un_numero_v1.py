@@ -42,34 +42,3 @@ SINO
 FIN-SI
 """
 
-import random
-
-STARTING_NUMBER = 1
-FINAL_NUMBER = 100
-MAXIMUM_TRIES = 10
-
-# Inicializamos
-number_to_guess = random.randint(STARTING_NUMBER, FINAL_NUMBER)
-remaining_tries = MAXIMUM_TRIES
-
-# Proceso
-while True:  # implementación ciclo postcondición REPETIR
-    input_number = int(input(f"Te quedan {remaining_tries} intentos. "
-                             f"Introduce un número entre {STARTING_NUMBER} y {FINAL_NUMBER}: "))
-    remaining_tries -= 1  # hemos consumido un intento
-
-    # pista (si no acierta) para que le sea más fácil adivinar
-    if input_number < number_to_guess:
-        print(f"{input_number} es menor que el número a adivinar.")
-    elif input_number > number_to_guess:
-        print(f"{input_number} es mayor que el número a adivinar.")
-
-    # salida ciclo
-    if input_number == number_to_guess or remaining_tries == 0:  # acabo si adivino o supero los intentos
-        break
-
-# Mostramos si acertó o no
-if input_number == number_to_guess:  # ha adivinado
-    print(f"Has adivinado el número en {MAXIMUM_TRIES - remaining_tries} intentos")
-else:
-    print(f"Has agotado el número máximo de intentos. El número a adivinar era {number_to_guess}")

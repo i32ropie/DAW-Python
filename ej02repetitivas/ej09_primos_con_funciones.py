@@ -33,36 +33,3 @@ Diseño
 
 Usamos una función para comprobar si un número es primo
 """
-import math
-
-
-def is_prime(num):
-    """
-    Comprueba si un número es primo usando el teorema de Wilson, que dice que:
-    Si p es un número primo entonces (p-1)!+1 es divisible por p.
-
-    :param num: número que queremos comprobar si es primo
-    :return: verdadero o falso
-    """
-    return (math.factorial(num - 1) + 1) % num == 0
-
-
-# Principal
-
-# Pedimos datos
-while True:  # postcondición
-    num_primes_to_show = int(input("Ingrese la cantidad de números primos a mostrar: "))
-    if num_primes_to_show > 0:
-        break  # condición de salida del ciclo
-
-# Proceso
-# el primer primo es 2, los otros son todos impares...
-print("1º: 2")
-num_primes_displayed = 1
-# ...a partir de 3
-prime_candidate = 3
-while num_primes_displayed < num_primes_to_show:
-    if is_prime(prime_candidate):  # Compruebo si "candidato_a_primo" es primo
-        num_primes_displayed += 1
-        print(f"{num_primes_displayed}º: {prime_candidate}")
-    prime_candidate += 2

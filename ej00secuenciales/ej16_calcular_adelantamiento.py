@@ -24,17 +24,3 @@ Algoritmo:
 2. Calcular time: (v=espacio/t), por lo tanto t=espacio/v. Tiempo=distancia/(v1-v2).
 3. Mostrar time.
 """
-
-print("Cálculo del tiempo que el primer alcanzará al segundo")
-print("-----------------------------------------------------")
-
-# Pedimos datos
-speed1 = float(input("Dime la velocidad del coche 1 (km/h): "))
-speed2 = float(input("Dime la velocidad del coche 2 (más pequeña)(km/h): "))
-distance = float(input("Dime la distancia entre los coches (km): "))
-
-# Hacemos cálculos
-time = 60 * distance / (speed1 - speed2)
-
-# Resultado
-print("El coche 1 alcanza al coche 2 en", time, "minutos.")

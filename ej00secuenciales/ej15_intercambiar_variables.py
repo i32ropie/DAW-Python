@@ -21,30 +21,3 @@ Algoritmo:
 2. Intercambio los valores. Necesito una variable auxiliar (aux). Asigno "a" en "aux", "b" en "a" y "aux" en "b"
 3. Mostrar los valores de "a" y "b".
 """
-
-print("Intercambio de los valores de dos variables")
-print("-------------------------------------------")
-
-# Pedimos datos
-a = int(input("Introduce valor de la variable A: "))
-b = int(input("Introduce valor de la variable B: "))
-
-# Intercambiamos las variables usando una variable auxiliar
-aux = a
-a = b
-b = aux
-
-# Mostramos resultados
-print("Nuevo valor de A: ", a)
-print("Nuevo valor de B: ", b)
-
-# Python permite hacer esto de forma más simple usando "tuplas".
-# Para probarlo volvemos a intercambiar los valores
-
-# Intercambiamos variables SIN usar variable auxiliar
-a, b = b, a
-
-# Mostramos resultados
-print("\nNuevo intercambio para recuperar los valores originales:")
-print("Nuevo valor de A: ", a)
-print("Nuevo valor de B: ", b)

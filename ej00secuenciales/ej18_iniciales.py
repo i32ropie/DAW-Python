@@ -22,16 +22,3 @@ Algoritmo:
 3. Concatenar los caracteres
 4. Mostrar iniciales
 """
-print("Cálculo de las iniciales del nombre y los apellidos de una persona")
-print("------------------------------------------------------------------")
-
-# Pedimos datos
-name = input("Dime tu nombre: ")
-surname1 = input("Dime tu primer apellido: ")
-surname2 = input("Dime tu segundo apellido: ")
-
-# Cálculos
-initials = (name[0] + surname1[0] + surname2[0]).upper()
-
-# Salida
-print("Las iniciales son: ", initials)

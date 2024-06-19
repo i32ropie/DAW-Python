@@ -9,17 +9,3 @@ pantalla, solo se debe usar print desde el programa principal.
 Autor: Rafael del Castillo Gomariz
 Fecha: 11/12/2022
 """
-
-
-def palotes(n):
-    # si el número no es entero, 0 o positivo lanzamos una excepción
-    if not isinstance(n, int) or n < 0:
-        raise ValueError(f"{n} no puede ser convertido al sistema de palotes.")
-
-    # proceso de conversión
-    n_en_palotes = ""
-    for d in str(n):
-        n_en_palotes += "|" * int(d) + " - "
-
-    # devolvemos sin guion y espacios del final
-    return n_en_palotes[:-3]

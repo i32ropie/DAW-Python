@@ -14,6 +14,3 @@ Algoritmo:
     Leer nombre
     Escribir mensaje de saludo
 """
-
-name = input("Dime tu nombre: ")
-print("Hola", name)

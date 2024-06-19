@@ -23,18 +23,3 @@ Algoritmo:
 2. Calcular hipotenusa (raíz cuadrada de la suma de los catetos al cuadrado).
 3. Mostrar hipotenusa.
 """
-
-import math  # módulo necesario para usar función de raíz cuadrada: sqrt
-
-print("Cálculo de la hipotenusa de un triángulo rectángulo.")
-print("----------------------------------------------------")
-
-# Pedimos datos
-side1 = float(input("Introduce el primer cateto:  "))
-side2 = float(input("Introduce el segundo cateto: "))
-
-# Cálculos
-hypotenuse = math.sqrt(side1**2 + side2**2)
-
-# Mostramos resultado
-print("La hipotenusa es", hypotenuse)

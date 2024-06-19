@@ -26,21 +26,3 @@ Algoritmo:
 4. Mostrar comisión
 5. Mostrar sueldo total: base_salary + comisión
 """
-
-COMMISSION_SALE = 0.1
-
-print("Cálculo de la comisión y sueldo de un vendedor")
-print("----------------------------------------------")
-
-# Pedimos datos
-base_salary = float(input("Dime el sueldo base: "))
-sale1 = float(input("Dime precio de la venta 1: "))
-sale2 = float(input("Dime precio de la venta 2: "))
-sale3 = float(input("Dime precio de la venta 3: "))
-
-# Cálculos
-commission_salary = COMMISSION_SALE * (sale1 + sale2 + sale3)     # 10% de las ventas
-
-# Salida
-print(f"Comisión por ventas: {commission_salary}")
-print(f"Sueldo total: {base_salary + commission_salary}")

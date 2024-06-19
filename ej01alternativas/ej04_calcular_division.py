@@ -20,16 +20,3 @@ Algoritmo:
 2. Si el divisor es igual a 0 escribir "No se puede dividir por 0"
 3. En caso contrario mostrar el resultado de la división
 """
-
-print("División de dos números")
-print("-----------------------")
-
-# Pedimos datos
-dividend = int(input("Dime el dividendo: "))
-divider = int(input("Dime el divisor: "))
-
-# Mostramos resultado
-if divider != 0:
-    print(f"La división es {dividend / divider}")
-else:
-    print("No puedes dividir por 0")

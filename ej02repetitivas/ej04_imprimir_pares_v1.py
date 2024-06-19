@@ -22,25 +22,3 @@ Mientras num <= num2
     num <-- num+2
 FinMientras
 """
-
-print("Pares comprendidos entre dos números")
-print("------------------------------------")
-
-# Pedimos datos
-num1 = int(input("Introduce el número 1: "))
-num2 = int(input("Introduce el número 2: "))
-
-# ¿Intercambiamos?
-if num1 > num2:
-    num1, num2 = num2, num1  # solo en Python, en otro lenguaje usamos variable auxiliar
-
-# Si num1 es par, empezamos por ese número, sino por el siguiente
-if num1 % 2 == 0:
-    num = num1
-else:
-    num = num1 + 1
-
-# Ciclo de escritura de pares comprendidos entre num1 y num2
-while num <= num2:
-    print(num)
-    num += 2

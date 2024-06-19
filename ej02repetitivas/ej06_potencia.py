@@ -38,24 +38,3 @@ FIN-SI
 ESCRIBIR potencia
 ---------------------------------------------------------------------------------------------------------------
 """
-
-print("Cálculo de la potencia")
-print("----------------------")
-
-# Inicializamos variables
-power = 1
-
-# Pedimos datos
-base = float(input("Base: "))
-exponent = int(input("Exponente: "))
-
-# Cálculos
-for _ in range(abs(exponent)): # en Python podemos por _ si no hace falta variable de control
-    power *= base
-
-# Si el exponente es negativo calculamos la inversa
-if exponent < 0:
-    power = 1 / power
-
-# Salida
-print(f"\n{base} elevado a {exponent} es {power}")

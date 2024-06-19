@@ -28,27 +28,3 @@ Diseño
 5.- Si creo_que_es_primo -> Mostrar "Es primo"
 6.- Si no -> Mostrar "No es primo"
 """
-import math
-import sys
-
-# Inicialización
-is_prime = True
-
-# Pedimos datos
-num_to_check = int(input("Introduce un número (>=2) para comprobar si es primo: "))
-if num_to_check < 2:
-    print("ERROR. El número no es válido.", file=sys.stderr)
-    exit(1)
-
-# Proceso
-num = 2
-while num <= math.sqrt(num_to_check) and is_prime:
-    if num_to_check % num == 0:
-        is_prime = False
-    num += 1
-
-# Mostramos resultado    
-if is_prime:
-    print("Es Primo")
-else:
-    print("No es Primo")

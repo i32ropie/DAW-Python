@@ -30,28 +30,3 @@ Algoritmo:
 5. Convierto los segundos totales a hora, minuto y segundos
 6. Muestro la hora de llegada
 """
-
-print("Cálculo de la hora de llegada de un ciclista de A a B")
-print("-----------------------------------------------------")
-
-# Pedimos datos
-departure_hour = int(input("Hora de salida: "))
-departure_minute = int(input("Minutos de salida: "))
-departure_second = int(input("Segundos de salida: "))
-travel_seconds = int(input("Tiempo que has tardado en segundos: "))
-
-# Hacemos los cálculos
-
-# convierto la hora de salida a segundos
-departure_time_in_seconds = departure_hour * 3600 + departure_minute * 60 + departure_second
-
-# le sumo los segundos que he tardado
-arrival_time_in_seconds = departure_time_in_seconds + travel_seconds
-
-# convierto los segundos totales a hora, minuto y segundos
-arrival_hour = arrival_time_in_seconds // 3600
-arrival_minute = (arrival_time_in_seconds % 3600) // 60
-arrival_second = (arrival_time_in_seconds % 3600) % 60
-
-# Muestro la hora de llegada
-print(f"Hora de llegada {arrival_hour}:{arrival_minute}:{arrival_second}")

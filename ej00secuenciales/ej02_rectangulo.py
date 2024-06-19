@@ -20,17 +20,3 @@ Diseño:
 3. Calcular área (base * altura).
 4. Mostrar perímetro y área.
 """
-
-print("Cálculo del perímetro y área de un rectángulo.")
-print("----------------------------------------------")
-
-# Pedimos datos
-base = float(input("Introduce la base: "))
-height = float(input("Introduce la altura: "))
-
-# Cálculos
-perimeter = 2 * (base + height)
-area = base * height
-
-# Mostramos resultado
-print("El perímetro es", perimeter, "y el área es", area)

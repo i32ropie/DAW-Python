@@ -22,13 +22,3 @@ Algoritmo:
 3. calcular los minutos restantes: resto de la división entre 60.
 4. Mostrar horas y minutos
 """
-
-# Pedimos datos
-total_minutes = int(input("Dime la cantidad de minutos: "))
-
-# Cálculos
-hours = total_minutes // 60
-minutes = total_minutes % 60
-
-# Resultado
-print(hours, "horas y", minutes, "minutos.")

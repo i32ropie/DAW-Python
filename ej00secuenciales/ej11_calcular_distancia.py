@@ -22,13 +22,3 @@ Algoritmo:
 1. Leer los dos números.
 2. Mostrar distancia (valor absoluto de la diferencia)
 """
-
-print("Cálculo de la distancia entre dos números")
-print("-----------------------------------------")
-
-# Pedimos datos
-num1 = int(input("Dime el número 1: "))
-num2 = int(input("Dime el número 2: "))
-
-# Mostramos resultado
-print("Distancia: ", abs(num1 - num2))

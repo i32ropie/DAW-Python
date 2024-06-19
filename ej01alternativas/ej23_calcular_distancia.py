@@ -49,34 +49,3 @@ FIN-SI
 * Muestro resultados
 ESCRIBIR candidate
 """
-
-print("Cálculo de la menor distancia")
-print("-----------------------------")
-
-# Pedir datos
-print("Dame cinco números:")
-n1 = int(input())
-n2 = int(input())
-n3 = int(input())
-n4 = int(input())
-n5 = int(input())
-
-# Establecemos candidato inicial
-candidate = n2
-distance = abs(n1-n2)
-
-# Comprobamos tercer número
-if abs(n1-n3) < distance:
-    candidate = n3
-    distance = abs(n1-n3)
-
-# Comprobamos cuarto número
-if abs(n1-n4) < distance:
-    candidate = n4
-    distance = abs(n1-n4)
-
-# Comprobamos quinto número
-if abs(n1-n5) < distance:
-    candidate = n5
-
-print(f"{candidate} es el número con menor distancia a {n1}")

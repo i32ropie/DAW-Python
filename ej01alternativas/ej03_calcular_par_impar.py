@@ -18,15 +18,3 @@ Algoritmo:
 2. Si el resto de dividir el número entre 2 es igual a 0 el número es par.
 3. En caso contrario es impar
 """
-
-print("Comprobación de la paridad de un número")
-print("---------------------------------------")
-
-# Lectura de datos
-number = int(input("Dime el número: "))
-
-# Comprobación de la paridad
-if number % 2 == 0:
-    print("Es Par")
-else:
-    print("Es impar")

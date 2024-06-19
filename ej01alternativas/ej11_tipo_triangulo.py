@@ -27,24 +27,3 @@ Ejemplos:
 (3,4,5) rectángulo,escaleno
 (7,7,9.8994949366117) rectángulo,isósceles
 """
-
-# Pedimos los datos de los lados del triángulo
-side_a = float(input("Introduce longitud lado A: "))
-side_b = float(input("Introduce longitud lado B: "))
-side_c = float(input("Introduce longitud lado C: "))
-
-# Cálculos
-# Comprobamos si es equilátero, este caso es excluyente
-if side_a == side_b and side_b == side_c:  # Python permitiría lado_a == lado_b == lado_c
-    print("El triángulo es EQUILÁTERO")
-else:
-    # Comprobamos si es rectángulo (puede ser rectángulo y isósceles o escaleno)
-    if side_a ** 2 == (side_b ** 2 + side_c ** 2) \
-            or side_b ** 2 == (side_a ** 2 + side_c ** 2) \
-            or side_c ** 2 == (side_b ** 2 + side_a ** 2):
-        print("El triángulo es RECTÁNGULO")
-    # Comprobamos si es isósceles o escaleno (equilátero no es)
-    if side_a == side_b or side_a == side_c or side_b == side_c:
-        print("El triángulo es ISÓSCELES")
-    else:
-        print("El triángulo es ESCALENO")

@@ -23,20 +23,3 @@ Algoritmo:
 2. Calcular distancia: raíz cuadrada de (x2-x1)^2 + (y2-y1)^2
 3. Mostrar distancia
 """
-
-import math
-
-print("Cálculo de la distancia entre dos puntos")
-print("----------------------------------------")
-
-# Pedimos datos
-x1 = int(input("Dime las coordenadas del punto 1:\n"))
-y1 = int(input())
-x2 = int(input("Dime las coordenadas del punto 2:\n"))
-y2 = int(input())
-
-# Cálculos
-distance = math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
-
-# Salida
-print(f"Distancia: {distance}")

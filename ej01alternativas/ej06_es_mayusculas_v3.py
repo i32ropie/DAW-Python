@@ -16,15 +16,3 @@ Algoritmo:
 2. Si la cadena es una letra y mayúscula mostramos "La cadena es mayúsculas"
 3. En caso contrario mostramos "La cadena no es mayúsculas"
 """
-
-print("Comprobación de letras mayúsculas")
-print("---------------------------------")
-
-# Pedir datos
-letter = input("Introduce una cadena: ")
-
-# Comprobamos y mostramos resultados
-if len(letter) == 1 and letter.isupper():
-    print("La cadena es una letra mayúscula.")
-else:
-    print("La cadena no es una letra mayúscula.")

@@ -10,19 +10,3 @@ Created on 27 nov. 2018.
 
 @author: Rafael del Castillo
 """
-
-TOTAL_NUMBERS = 15  
-numbers = list()
-
-# Pedimos los datos
-print("Vaya introduciendo números enteros y pulsando INTRO:")
-for i in range(TOTAL_NUMBERS):
-    numbers.append(int(input()))
-print("\nLista original:", numbers)
-
-# Rotamos una posición a la derecha
-aux = numbers[-1]
-for i in range(len(numbers) - 1, 0, -1):
-    numbers[i] = numbers[i - 1]
-numbers[0] = aux
-print("\nLista rotada una posición a la derecha:", numbers)
